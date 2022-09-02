@@ -1,3 +1,8 @@
-# K8S101
+# Kubernetes Cluster Setup Using Kubeadm
 
-詳細說明請參考: 
+The Blog: 
+
+# Scripts Description
+- setup_docker.sh: Install docker19.03 in Ubuntu 20.04
+- setup_kubeadm.sh: Install kubeadm, kubelet, kubectl
+- init_cluster: Build K8S cluster 
