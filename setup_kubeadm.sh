@@ -10,9 +10,9 @@ echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https:/
 
 # Update apt package index, install kubelet, kubeadm and kubectl, and pin their version:
 sudo apt-get update
-sudo apt-get install -y kubeadm=1.18.5-00 kubelet=1.18.5-00 kubectl=1.18.5-00
+sudo apt-get install -y kubeadm kubelet kubectl
 # Fix the packages version
-sudo apt-mark hold kubelet kubeadm kubectl 
+sudo apt-mark hold kubelet kubeadm kubectl
 
 # MUST disable swap in order for the kubelet to work properly.
 sudo swapoff -a; sudo sed -i '/swap/d' /etc/fstab
